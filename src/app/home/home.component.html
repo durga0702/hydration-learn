@@ -1,0 +1,5 @@
+<h1>Home</h1>
+<div *ngFor="let data of photos| slice:0:3">
+    <p>{{data?.id}}</p>
+<img src='{{data?.url}}'>
+</div>
