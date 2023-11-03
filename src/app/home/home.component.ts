@@ -7,7 +7,8 @@ import { Service } from '../service.service';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
+  host: {ngSkipHydration: 'true'},
 })
 export class HomeComponent {
   public photos:Array<any>=[];
